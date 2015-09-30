@@ -1,7 +1,13 @@
-#!/bin/python
+#!/usr/bin/env python
 
-import os
+import os, sys
 
-print "BPM_HOST = "+os.environ['BPM_HOST']
-print "BPM_USER = "+os.environ['BPM_USER']
-print "BPM_PASS = "+os.environ['BPM_PASS']
+print
+print "rbstest.py script is running"
+
+sys.path.append(os.getcwd()+"/python")
+#print sys.path
+
+import testrunner
+
+print "rbstest.py is ending"
